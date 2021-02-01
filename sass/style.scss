@@ -8,7 +8,7 @@ $color-bg: #dfe4ea; /* light gray */
 $color-text-one: #000000; /* black */
 $color-text-two: #747d8c; /* dark gray */
 $color-text-three: #f9ca24; /* yellow */
-$color-icon: #1e272e; /* black pearl */ */
+$color-icon: #1e272e; /* black pearl */ 
 
 /* Global */
 
@@ -35,4 +35,85 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;     
+}
+
+/* Navigation */
+
+.navigation {  
+    position: relative;
+    height: 100vh;
+    background: url("https://pixabay.com/get/g7087d42ae101ebbae2b4f7af990c87c07d4abf6ae087934416c2765790c39930227f7044fc5f590ee4240611f112fc23_1920.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://pixabay.com/get/g7087d42ae101ebbae2b4f7af990c87c07d4abf6ae087934416c2765790c39930227f7044fc5f590ee4240611f112fc23_1920.jpg");
+    background-position: center top;
+    background-size: cover;
+
+    .navigation-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+        .navigation-logo {
+            display: flex;
+            align-items: center;
+            flex: 0 1 auto;
+            height: 80px;
+            font-family: $font-logo;
+            color:$color-text-three;
+            font-size: 40px;
+            font-weight: bold;
+        }
+            .navigation-menu {
+                flex: 0 1 auto;
+            }
+                ul {
+                    height: 80px;
+                    align-items: center;
+                    display: flex;
+                    list-style: none;
+                }
+                    li {
+                        display: inline-block;
+                        padding: 0 20px;
+                    }
+                        a {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $color-main;
+                            font-weight: bold;
+                        }                 
+                            .navigation-title {
+                                position: absolute;
+                                width: 100%;
+                                height: 200px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -30%);
+                                text-align: center;
+                            }
+                                h1 {
+                                    font-size: 30px;
+                                    color: $color-main;
+                                    text-transform: capitalize;
+                                    margin: 20px 0;
+                                    font-style: italic;
+                                }
+                                    h2 {
+                                        font-size: 60px;
+                                        color: $color-main;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        margin: 20px 0;
+                                    }
+                                        .btn {
+                                            display: inline-block;
+                                            height: 60px;
+                                            width: 200px;
+                                            line-height: 60px;
+                                            margin: 15px 0;
+                                            font-size: 20px;
+                                            background-color: $color-text-three;
+                                            cursor: pointer;
+                                        }
 }
