@@ -163,3 +163,55 @@ body {
                             color: $color-text-two;
                         }
 }
+
+/* Portfolio */
+
+.portfolio {
+    background-color: $color-bg;    
+
+    .portfolio-title {
+        padding-top: 70px;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+        .portfolio-subtitle {
+            text-align: center;
+            color: $color-text-two;
+            font-style: italic;
+            margin-bottom: 70px;
+        }
+            .portfolio-box {
+                flex: 0 0 33.3333%;      
+                position: relative;
+                min-height: 300px;   
+                margin-bottom: 70px;
+                background-color: $color-bg;
+            }
+
+                .portfolio-image {
+                    width: 100%;
+                    height: 70%;
+                    position: absolute;     
+                    background-color: $color-bg;
+                }
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        max-width: 300px;
+                        object-fit: cover;
+                    }
+
+
+                        .portfolio-description {
+                            flex: 0 0 33.3333%;    
+                            max-width: 300px;
+                            padding: 230px 0 20px;
+                            text-align: center;
+                            background-color: $color-main;
+                        }
+                            p {
+                                color: $color-text-two;
+                            }
+}

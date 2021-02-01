@@ -184,4 +184,61 @@ body {
 .services p {
   color: #747d8c;
 }
+
+/* Portfolio */
+.portfolio {
+  background-color: #dfe4ea;
+}
+
+.portfolio .portfolio-title {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.portfolio .portfolio-subtitle {
+  text-align: center;
+  color: #747d8c;
+  font-style: italic;
+  margin-bottom: 70px;
+}
+
+.portfolio .portfolio-box {
+  -ms-flex: 0 0 33.3333%;
+      flex: 0 0 33.3333%;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 70px;
+  background-color: #dfe4ea;
+}
+
+.portfolio .portfolio-image {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background-color: #dfe4ea;
+}
+
+.portfolio img {
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .portfolio-description {
+  -ms-flex: 0 0 33.3333%;
+      flex: 0 0 33.3333%;
+  max-width: 300px;
+  padding: 230px 0 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.portfolio p {
+  color: #747d8c;
+}
 /*# sourceMappingURL=style.css.map */
