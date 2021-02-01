@@ -1,0 +1,19 @@
+/* Variables */
+
+$font-text: 'Open Sans', sans-serif;
+$font-logo: 'Dancing Script', cursive;
+
+$color-main: #ffffff; /* white */
+$color-bg: #dfe4ea; /* light gray */
+$color-text-one: #000000; /* black */
+$color-text-two: #747d8c; /* dark gray */
+$color-text-three: #f9ca24; /* yellow */
+$color-icon: #1e272e; /* black pearl */ */
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
