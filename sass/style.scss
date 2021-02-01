@@ -117,3 +117,49 @@ body {
                                             cursor: pointer;
                                         }
 }
+
+/* Services */
+
+.services {
+    margin: 70px 0;
+
+    .services-title {
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+        .services-subtitle {
+            text-align: center;
+            color: $color-text-two;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+            .services-box {
+                flex: 0 0 33.333%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                padding: 20px 15px;   
+            }
+
+                .fas {
+                    font-size: 30px;
+                    color:$color-text-three;       
+                    border: 3px solid $color-text-three;       
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+                    h3 {
+                        padding: 15px 0;
+                        font-weight: bold;
+                    }
+                        p {
+                            color: $color-text-two;
+                        }
+}
