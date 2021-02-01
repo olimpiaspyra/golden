@@ -17,3 +17,22 @@ $color-icon: #1e272e; /* black pearl */ */
     margin: 0;
     padding: 0;
 }
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;   
+} 
+
+body {    
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font-text;
+    color: $color-text-one;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+}
