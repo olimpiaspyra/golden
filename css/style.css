@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* white */
 /* light gray */
@@ -38,8 +39,7 @@ body {
 .navigation {
   position: relative;
   height: 100vh;
-  background: url("https://pixabay.com/get/g7087d42ae101ebbae2b4f7af990c87c07d4abf6ae087934416c2765790c39930227f7044fc5f590ee4240611f112fc23_1920.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://pixabay.com/get/g7087d42ae101ebbae2b4f7af990c87c07d4abf6ae087934416c2765790c39930227f7044fc5f590ee4240611f112fc23_1920.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Moduł-4/golden/images/gadgets.jpg");
   background-position: center top;
   background-size: cover;
 }
@@ -155,12 +155,6 @@ body {
   -ms-flex: 0 0 33.333%;
       flex: 0 0 33.333%;
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   text-align: center;
   padding: 20px 15px;
 }
@@ -206,33 +200,27 @@ body {
 }
 
 .portfolio .portfolio-box {
-  -ms-flex: 0 0 33.3333%;
-      flex: 0 0 33.3333%;
+  -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
   position: relative;
   min-height: 300px;
   margin-bottom: 70px;
-  background-color: #dfe4ea;
 }
 
 .portfolio .portfolio-image {
   width: 100%;
   height: 70%;
   position: absolute;
-  background-color: #dfe4ea;
 }
 
 .portfolio img {
   height: 100%;
   width: 100%;
-  max-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .portfolio .portfolio-description {
-  -ms-flex: 0 0 33.3333%;
-      flex: 0 0 33.3333%;
-  max-width: 300px;
   padding: 230px 0 20px;
   text-align: center;
   background-color: #ffffff;
@@ -286,5 +274,53 @@ body {
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .navigation-menu li {
+    padding: 0 5px;
+  }
+  .navigation-menu a {
+    font-size: 12px;
+  }
+  .navigation-title h1 {
+    font-size: 16px;
+  }
+  .navigation-title h2 {
+    font-size: 24px;
+  }
+  .footer-copyright p {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: inherit;
+    padding: 5px 0;
+  }
+  .footer-contact {
+    height: 150px;
+  }
+  .footer-contact ul {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: inherit;
+    padding: 5px 0;
+    text-align: right;
+  }
+  .footer-contact i {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1e272e;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
